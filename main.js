@@ -1,5 +1,5 @@
 
-const jumbotronStartButton = document.getElementById("revele");
+const jumbotronStartButton = document.getElementById("reveal");
 jumbotronStartButton.addEventListener('click', () => {
         let domString = `<form class="text-ligth w-50 p-3">
         <div class="form-group">
@@ -16,6 +16,7 @@ jumbotronStartButton.addEventListener('click', () => {
 const printToDom = (stringToPrint, whereToPrint) => {
     document.getElementById(whereToPrint).innerHTML += stringToPrint;
 }
+
 const expel = () => {
     const expelButton = document.getElementsByClassName('expel');
     for (let i=0; i< expelButton.length; i++){
@@ -47,10 +48,9 @@ const sortButton = document.getElementById('sort');
                                                     <div class="card-body">
                                                     <h5 class="card-title">${studentInput}</h5>
                                                     <p class="card-text">${schools[i]}</p>
-                                                    <button id="expel" href="#" class="btn btn-danger deleteButton">Expel</button>
+                                                    <button class="expel" href="#" class="btn btn-danger deleteButton">Expel</button>
                                                     </div>
                                                  </div>`
-
 clearTextBox();
 expel();
     }
@@ -60,3 +60,4 @@ expel();
 let clearTextBox = ("click", () => {
     document.getElementById("input").value = '';
 });
+
