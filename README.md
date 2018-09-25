@@ -9,7 +9,7 @@ And when the user enters their name and click submit button a card with their na
 
 ## Screenshots
 
-![main page](./image/sorting.jpg)
+![main page](./image/Sorting.jpg)
 
 
 ## How to run this project:
